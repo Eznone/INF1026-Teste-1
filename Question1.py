@@ -38,6 +38,13 @@ def qualTurmaVS2(dicAl, aluno):
     else:
         print(f"{aluno} is in group {group}!")
 
+
+def qualProfessor(dicAl, dicPro, aluno):
+    group = dicAl.get(aluno)
+    professor = dicPro.get(group)
+    print(f"{aluno} is in group {group} with {professor}")
+
+
 # Para testes da questao 1:
     
 dAlunoETurma = {'Nina': '33A', 'Dudu':'33E', 'Gigi':'33A', 'Vava':'33C', 'Kaka':'33C', 
